@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Card Maker</title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            h1, h2, h4{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                color: coral;
+            }
+            img{
+                width: 150px;
+            }
+            .p-tags{
+
+            }
+            #name{
+
+            }
+        </style>
+    </head>
+<body>
+
+        <input/>
+        <button onclick="onClickCallback()">
+            <p>Submit</p>
+        </button>
+
+        <h1>
+            Name:
+        </h1>
+        <h2 id="name">
+            - - - - - - - - - 
+        </h2>
+        <h4 class="p-tags">
+            Hospital: Overlake Hospital
+        </h4>
+        <p class="p-tags">
+            ID: 123456789
+        </p>
+        <a href="https://www.overlakehospital.org/">
+            <p>Check in at the hospital if you're not feeling well</p>
+            <img src="https://unicoprop.com/wp-content/uploads/2018/01/Overlake_Exterior_2009_3-1200x1130.jpg"/>
+        </a>
+
+        <script>
+            function onClickCallback(){
+                var nameElement = document.getElementById("name");
+                var inputElement = document.querySelector("input");
+
+                console.log(nameElement);
+                console.log(inputElement);
+
+
+                var nameInputted = inputElement.value;
+                nameElement.innerText = nameInputted;
+
+                console.log()
+            }
+        </script>
+    </body>
+</html>
